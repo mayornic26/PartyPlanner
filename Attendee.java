@@ -5,28 +5,46 @@
  * Preconditons: txt file to import attendee objects
  * Postconditions: generates and attendee object with name,tableID, tablePos, and companyID
  */
+ 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.ArrayList;
+ 
  public class Attendee{
-	 private String name;
+	 private String first;
+	 private String last;
 	 private int tableID;
-	 private int seatID;
-	 prviate int companyID;
+	 private int seatID; 
+	 private int companyID;
  
  
- public Attendee(String attName, String compName, int CompID){
-	 name = attName;
+ public Attendee(String first, String last, int compID){
+	 nameFirst = first;
+	 nameLast = last;
 	 tableID = -1;
 	 seatID = -1;
-	 CompanyID = compID;
+	 companyID = compID;
  }
  
- public int getTableID(){
+ public int gettableID(){
 	 return tableID;
 	}
- public String getattName(){
-	return attName;	
+public int getseatID(){
+	return seatID;
+}
+ public String getfirst(){
+	return nameFirst;	
 	}
- public int getCompanyID(){
-	return CompanyID;
+public String getlast(){
+	return nameLast;
+}
+	
+ public int getcompID(){
+	return companyID;
 	}
-
+	
+	public String toString(){
+	return (name + "works at " + companyID);
+	}
 }
