@@ -12,8 +12,8 @@ import java.util.Scanner;
 import java.util.ArrayList;
  
  public class Attendee{
-	 private String first;
-	 private String last;
+	 private String nameFirst;
+	 private String nameLast;
 	 private int tableID;
 	 private int seatID; 
 	 private int companyID;
@@ -45,6 +45,7 @@ public String getlast(){
 	}
 	
 	public String toString(){
-	return (name + "works at " + companyID);
+	
+	return (nameFirst + " " + nameLast + "works at " + companyID + "\n");
 	}
 }
