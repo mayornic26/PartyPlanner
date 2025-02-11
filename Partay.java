@@ -36,7 +36,9 @@ import java.util.ArrayList;
         String[] newData2 = data.split(",");
         attCompanies.add(Integer.parseInt(newData2[1]));
         attCompanies.add(newData2[2]);
-        //while loop
+        for(int i = attCompanies; i > attCompanies; i++){
+		
+		} 
       }
       myReader.close();
     } catch (FileNotFoundException e) {
