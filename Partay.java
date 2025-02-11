@@ -26,15 +26,17 @@ import java.util.ArrayList;
 	}
 	
 	public void loadCompanies(){
-	ArrayList<Attendee> attCompanies = new ArrayList<Attendee>();
+	ArrayList<String> attCompanies = new ArrayList<String>();
+	attCompanies.add("blank");
 	try {
       File myObj = new File("companies.txt");
       Scanner myReader = new Scanner(myObj);
       while (myReader.hasNextLine()) {
         String data = myReader.nextLine();
         String[] newData2 = data.split(",");
-        Attendee companies = new Attendee(newData2[1], "Holder", -1);
-        attCompanies.add(companies);
+        attCompanies.add(Integer.parseInt(newData2[1]));
+        attCompanies.add(newData2[2]);
+        //while loop
       }
       myReader.close();
     } catch (FileNotFoundException e) {
@@ -43,5 +45,17 @@ import java.util.ArrayList;
 		}
 		 System.out.println(attCompanies);
 	}
+	for(for int 
+	//manually add people
+	Scanner inputAttendee = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter a new Attendee if you choose because there are leftover spots: ");
+    String userName = inputAttendee.nextLine();  // Read user input
+	
+	Scanner inputCompanies = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter a new company and a person: ");
+    String userName = inputCompanies.nextLine();  // Read user input
+    
+    
+    
   }
  
