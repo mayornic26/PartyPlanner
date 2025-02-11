@@ -12,7 +12,7 @@ import java.util.ArrayList;
 		
 		Partay p1 = new Partay(); 
 		p1.loadPeople();//called method for p1 object, which is an instance of partay
-		
+		p1.loadCompanies();
 		
 	    /*
 		ArrayList<Attendee> attList = new ArrayList<Attendee>();
