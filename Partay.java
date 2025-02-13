@@ -31,14 +31,11 @@ import java.util.ArrayList;
 	try {
       File myObj = new File("companies.txt");
       Scanner myReader = new Scanner(myObj);
+      int coCount = 1;
       while (myReader.hasNextLine()) {
         String data = myReader.nextLine();
         String[] newData2 = data.split(",");
-        attCompanies.add(Integer.parseInt(newData2[1]));
         attCompanies.add(newData2[2]);
-        for(int i = attCompanies; i > attCompanies; i++){
-		
-		} 
       }
       myReader.close();
     } catch (FileNotFoundException e) {
@@ -47,7 +44,6 @@ import java.util.ArrayList;
 		}
 		 System.out.println(attCompanies);
 	}
-	for(for int 
 	//manually add people
 	Scanner inputAttendee = new Scanner(System.in);  // Create a Scanner object
     System.out.println("Enter a new Attendee if you choose because there are leftover spots: ");
@@ -57,7 +53,9 @@ import java.util.ArrayList;
     System.out.println("Enter a new company and a person: ");
     String userName = inputCompanies.nextLine();  // Read user input
     
-    
-    
+    while(attCompanies < 10){
+		while(//10 seats){
+		//set companies list to only 10 tab;es
+    }
   }
  
