@@ -76,7 +76,7 @@ import java.util.ArrayList;
 	 }
 	
 	 // Method to print the attendee in String format
-	 public String toString() {
+     public String toString() {
 	   return (nameFirst + " " + nameLast);
 	 }
 }
