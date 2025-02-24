@@ -24,15 +24,15 @@ import java.util.*;
 
  public class Partay {
 // Attributes to store for the party
-	private ArrayList<Attendee> attList = new ArrayList<Attendee>();
-	private ArrayList<Company> CompanyList = new ArrayList<Company>();
+    private ArrayList<Attendee> attList = new ArrayList<Attendee>();
+    private ArrayList<Company> CompanyList = new ArrayList<Company>();
 // variables that can be customized to represent the maximum number of tables, people per table and maximum per company
     private int max_per_table = 10;
     private int number_of_tables = 10;
     private int max_per_company = 10;
 
 // method to read the partyguest.txt file and store in ArrayList
-	public void loadPeople() {
+    public void loadPeople() {
          try {
 			//adds the people to the code from the text file
            File myObj = new File("partyguests.txt");
@@ -51,9 +51,9 @@ import java.util.*;
 	}
 
 // method to read the companies.txt file and store in ArrayList
-	public void loadCompanies() {
+     public void loadCompanies() {
 
-	      try {
+	try {
 			  //adds the companies from the text file into the code
             File myObj = new File("companies.txt");
             Scanner myReader = new Scanner(myObj);
@@ -84,7 +84,7 @@ import java.util.*;
 
 
 // method to register a person manually
-	 public void registerperson () {
+	public void registerperson () {
 		 //registers a person into the list 
 		
         boolean register_person = false; 
@@ -96,7 +96,7 @@ import java.util.*;
            String question = inputQuestion.nextLine();
         
            if (question.equals("yes")) {
-		register_person = true;
+		       register_person = true;
         
 	           Scanner inputFirstName = new Scanner(System.in);  // Create a Scanner object
                System.out.println("Enter a new Attendee First Name: ");
@@ -141,7 +141,7 @@ import java.util.*;
 				}
 			}
 			if(count > max_per_company){
-				throw new IllegalArgumentException("Exeeds nunber of people for company: " + i);
+				throw new IllegalArgumentException("Exeeds number of people for company: " + i);
 			}
 		}
 		// no more than max_per_table * number_of_tables
@@ -186,8 +186,8 @@ import java.util.*;
 	     
      }
  
- //method to print the roster by the table 
-	 public void print_rosters_by_table() {
+ //method to print the roster by the table  
+     public void print_rosters_by_table() {
 		 for (int i = 1; i <= number_of_tables; i++) {
 			 
 			 System.out.println("Table number " + i  + ":"); //gives the table number
@@ -204,7 +204,7 @@ import java.util.*;
 	 } 
 
 // method to print roster by company
-	 public void print_rosters_by_company() {
+     public void print_rosters_by_company() {
 		 //prints the rosters by company 
 		 for (int i = 0; i < CompanyList.size() ; i++) {
 			 System.out.println(CompanyList.get(i).getname() + ":"); //prints the company to the person
@@ -268,3 +268,5 @@ import java.util.*;
 		}
   
 }
+
+
