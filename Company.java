@@ -48,7 +48,7 @@ import java.util.*;
 
  public class Company {
 // Attributes to store for each company
-	 private int companyID;
+     private int companyID;
      private String companyName;
      public int count;
  
@@ -71,11 +71,11 @@ import java.util.*;
 // Setter method to set the number of people for a company
      public void set_count(int total) {
 	   this.count = total;	 
-	 }
+     }
 
 // Method to print the company in String format 	
-	 public String toString() {
+     public String toString() {
 	   return (companyID + " " + companyName);
-	 }
+     }
 }
 
